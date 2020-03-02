@@ -1,0 +1,48 @@
+﻿@model AgroAnaliseApp.Models.Address
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Address</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Line1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Line1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Line2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Line2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ZipCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ZipCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Coordinates)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Coordinates)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Salvar</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
